@@ -1,0 +1,115 @@
+div{
+   display: flex;
+   flex-direction: column;
+   column-gap: 20px;
+   row-gap: 50px;
+   justify-content: center;
+   align-items: center;
+    label{
+        font-size: 100px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    input{
+        font-size: 2rem;
+        padding: 15px 30px;
+        border: 3px solid rgb(80, 173, 80);
+        box-shadow: 1px 1px 10px rgb(80, 173, 80);
+        border-radius: 10px;
+        background-color: whitesmoke;
+
+    }
+    button{
+        font-size: 50px;
+        padding: 8px 25px;
+        background-color: rgb(28, 33, 43);
+        border: 3px solid rgb(80, 173, 80);
+        color:rgb(80, 173, 80) ;
+        box-shadow: 1px 1px 10px rgb(80, 173, 80);
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    
+    button:hover{
+        box-shadow: none;
+    }
+
+}
+
+
+.heading{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    div{
+        width: 100px;
+        box-shadow: 1px 1px 10px rgb(54, 126, 54);
+    }
+
+    div:hover{
+        box-shadow: none;
+        text-shadow: 1px 1px 10px orange;
+    }
+}
+
+
+.input_todo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0px;
+}
+
+
+.todo_items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    .todo_task{
+        color:white;
+        width: 900px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(54, 126, 54);
+        display: grid;
+        grid-template-columns: 100px 600px 100px 100px;
+
+        .item{
+            justify-self: left;
+        }
+
+        h1{
+            font-weight: lighter;
+            font-family:monospace;
+        }
+
+    }
+    .delete, .complete ,.edit{
+        position: absolute;
+        padding: 0px;
+        box-shadow: none;
+        border: none;   
+    }
+
+    .delete:hover{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgb(54, 126, 54);
+    }
+
+    .edit:hover{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgb(54, 126, 54);
+    }
+
+    .todo_task:hover {
+        box-shadow: 10px 10px 5px black;
+    }
+    
+}
+
+
